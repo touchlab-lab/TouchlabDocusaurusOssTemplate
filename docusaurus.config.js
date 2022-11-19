@@ -3,7 +3,6 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const simplePlantUML = require("@akebifiky/remark-simple-plantuml");
 
 // const darkTheme = require('prism-react-renderer/themes/vsDark/index.cjs')
 // const codeTheme = require('prism-react-renderer/themes/oceanicNext')
@@ -130,7 +129,7 @@ var codeTheme = {
 const config = {
   title: 'KMMBridge',
   tagline: 'Kotlin Mobile Multiplatform Packaging',
-  url: 'https://touchlab.github.io/KMMBridge/',
+  url: 'https://touchlab.github.io/',
   baseUrl: '/KMMBridge/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -164,8 +163,7 @@ const config = {
           editUrl:
             'https://github.com/touchlab/KMMBridge/tree/main/website/',
           showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
-          remarkPlugins: [simplePlantUML]
+          showLastUpdateAuthor: true
         },
         blog: false,
         theme: {

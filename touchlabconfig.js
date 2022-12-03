@@ -2,7 +2,7 @@ const orgName = "touchlab-lab";
 const repoName = "TouchlabDocusaurusOssTemplate";
 
 const docusaurusConfig = {
-    title: repoName,
+    title: "Docusaurus Template",
     tagline: "Touchlab Docusaurus Template Project",
     url: `https://${orgName}.github.io/`,
     baseUrl: `/${repoName}/`,

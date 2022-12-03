@@ -16,8 +16,9 @@ function HeroAbout() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="h1 mb-4 drop-shadow-lg text-white" data-aos="fade-up">CrashKiOS - KMM Crash Reporting</h1>
-            <p className="text-xl text-gray-400 mb-8 drop-shadow-lg" data-aos="fade-up" data-aos-delay="200">Symbolicated crash reporting for Kotlin Multiplatform Mobile, supporting Firebase Crashlytics and Bugsnag.</p>
+            <h1 className="h1 mb-4 drop-shadow-lg text-white" data-aos="fade-up">SKIE</h1>
+            <h2 className="h2 mb-4 drop-shadow-lg text-white" data-aos="fade-up">Swift/Kotlin Interface Extender</h2>
+            <p className="text-xl text-gray-400 mb-8 drop-shadow-lg" data-aos="fade-up" data-aos-delay="200">Swift-friendly API generator for Kotlin Multiplatform Mobile</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div data-aos="fade-up" data-aos-delay="400">
                       <a className="btn text-white bg-cyan-600 hover:bg-cyan-700 w-full mb-4 sm:w-auto sm:mb-0 drop-shadow-lg" href="intro">Get Started</a>

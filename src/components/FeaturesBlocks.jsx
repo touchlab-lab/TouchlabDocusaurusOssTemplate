@@ -1,5 +1,5 @@
 import React from 'react';
-import {Cyborg, FavList, Messaging, Note, ThumbUp, World2} from "./FeatureIcons";
+import {Android, Apple, Cyborg, DecisionProcess, FavList, Messaging, Note, ThumbUp, World2} from "./FeatureIcons";
 
 function FeatureBlock(name, description, svgBody){
   return(
@@ -45,21 +45,21 @@ function FeaturesBlocks() {
             )}
 
             {FeatureBlock(
-                "Instant Features",
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
-                Cyborg
+                "Engineering Managers",
+                null,
+                DecisionProcess
             )}
 
             {FeatureBlock(
-                "Instant Features",
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
-                ThumbUp
+                "Android Developers",
+                null,
+                Android
             )}
 
             {FeatureBlock(
-                "Instant Features",
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.",
-                Messaging
+                "iOS Developers",
+                null,
+                Apple
             )}
 
           </div>

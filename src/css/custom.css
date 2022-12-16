@@ -6,14 +6,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700;800;900&display=fallback');
 
-@tailwind base;
+@import 'preflight-wrapper.css';
+
+/*@tailwind base;*/
 @tailwind components;
 @tailwind utilities;
 
 @import 'additional-styles/utility-patterns.css';
 @import 'additional-styles/range-slider.css';
 @import 'additional-styles/toggle-switch.css';
-/*@import 'additional-styles/theme.css';*/
+
+@import 'additional-styles/theme.css';
 
 .auto-height{
   max-width: 100%;
@@ -23,68 +26,6 @@
 .navbar {
   opacity: .9;
 }
-
-.docs-wrapper h1 {
-  display: block;
-  font-size: var(--ifm-h1-font-size);
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-.docs-wrapper h2 {
-  font-size: var(--ifm-h2-font-size);
-  display: block;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-.docs-wrapper h3 {
-  font-size: var(--ifm-h3-font-size);
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-.docs-wrapper h4 {
-  font-size: var(--ifm-h4-font-size);
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-.docs-wrapper img,
-.docs-wrapper svg {
-  display: inline-block;
-  vertical-align: baseline;
-}
-.docs-wrapper a {
-  color: var(--ifm-link-color);
-  text-decoration: var(--ifm-link-decoration);
-}
-.docs-wrapper ol,
-.docs-wrapper ul {
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
-}
-
-
 
 /* You can override the default Infima variables here. */
 :root {

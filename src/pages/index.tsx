@@ -1,14 +1,13 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Process from '@site/src/components/Process';
 import HeroAbout from '@site/src/components/HeroAbout';
+import Summary from '@site/src/components/Summary';
+import Credits from '@site/src/components/Credits';
 import Stats from '@site/src/components/Stats';
 import FeaturesBlocks from '@site/src/components/FeaturesBlocks';
 import FeaturesZigzag from '@site/src/components/FeaturesZigzag';
-import HeroHome from '@site/src/components/HeroHome';
 import Newsletter from '@site/src/components/Newsletter';
-import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
 export default function Home(): JSX.Element {
@@ -24,18 +23,23 @@ export default function Home(): JSX.Element {
   });*/
 
   return (
-    <Layout
-      title={`CrashKiOS - KMM Crash Reporting`}
-      description="Symbolicated crash reporting for Kotlin Multiplatform Mobile, supporting Firebase Crashlytics and Bugsnag">
-      <HeroAbout/>
-      {/*<HeroHome />*/}
-      {/*<Process/>*/}
-      <Stats/>
-      <FeaturesZigzag/>
-      <FeaturesBlocks/>
-      <Newsletter/>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-    </Layout>
+
+        <Layout
+            title={`CrashKiOS - KMM Crash Reporting`}
+            description="Symbolicated crash reporting for Kotlin Multiplatform Mobile, supporting Firebase Crashlytics and Bugsnag">
+          <div className="preflight-wrapper">
+          <HeroAbout/>
+          <Summary/>
+          {/*<HeroHome />*/}
+          {/*<Process/>*/}
+          <Stats/>
+          <FeaturesZigzag/>
+          <FeaturesBlocks/>
+          <Newsletter/>
+            <Credits/>
+          </div>
+
+        </Layout>
+
   );
 }

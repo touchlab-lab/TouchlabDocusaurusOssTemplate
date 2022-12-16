@@ -62,7 +62,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            `https://github.com/${touchlabConfig.docusaurusConfig.organizationName}/${touchlabConfig.docusaurusConfig.projectName}/tree/main/website/`,
+              `https://github.com/${touchlabConfig.docusaurusConfig.organizationName}/${touchlabConfig.docusaurusConfig.projectName}/tree/main/website/`,
           showLastUpdateTime: true,
           showLastUpdateAuthor: true
         },
@@ -88,8 +88,9 @@ const config = {
         colorMode: {
           defaultMode: 'dark',
         },
+        metadata: [{name: 'robots', content: 'noindex,follow'}],
         navbar: {
-        title: touchlabConfig.docusaurusConfig.title,
+          title: touchlabConfig.docusaurusConfig.title,
           // style: 'dark',
           logo: {
             alt: 'Touchlab Logo',
@@ -139,15 +140,7 @@ const config = {
                 },
               ],
             },
-            {
-              title: 'More',
-              items: [
-                {
-                  label: `${touchlabConfig.docusaurusConfig.projectName} GitHub`,
-                  href: `https://github.com/touchlab/${touchlabConfig.docusaurusConfig.organizationName}/${touchlabConfig.docusaurusConfig.projectName}`,
-                },
-              ],
-            },
+
           ],
           copyright: `Copyright © ${new Date().getFullYear()} Touchlab`,
         },
